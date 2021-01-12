@@ -1,0 +1,11 @@
+<h1>Product Index</h1>
+
+<form method="GET" action="<%= add_path %>">
+    <input type="text" name="product">
+    <input type="submit" value="add to cart">
+</form>
+
+<h3>Cart Items</h3>
+<% cart.each do |item| %>
+    <li><%= item %></li>
+<% end %>
